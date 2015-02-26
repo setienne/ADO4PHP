@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  @Warning-> Vous devrez au préalablement chargé la librairie PDO qui conviendra à la méthode que vous utiliser -->
+<!--  Patterns des Data Source Name -->
+<DSN>
+	<DSN_vars>
+		<DSN_var id="1" value="type"/>
+		<DSN_var id="2" value="name"/>
+		<DSN_var id="3" value="server"/>
+		<DSN_var id="4" value="user"/>
+		<DSN_var id="5" value="password"/>
+	</DSN_vars>
+	<DSN_patterns>
+		<DSN_pattern id="mysql" value="1#:host=#3#; dbname=#2" />
+		<DSN_pattern id="pgsql" value="1#:dbname=#2#; host=#3" />
+		<DSN_pattern id="sqlite" value="1#:host=dbname=#2" />
+		<DSN_pattern id="firebird" value="1#:Database=#2#;DataSource=#3#;Port=3050" />
+		<DSN_pattern id="informix" value='1#:host=#3#;service=9800;dbname=#2#;server=ids_server;protocol=onsoctcp;EnableScrollableCursors=1' />
+		<DSN_pattern id="odbc" value="1#:DRIVER={Microsoft Access Driver (*.mdb)}; Dbq=#2#;Uid=#4#" />
+		<DSN_pattern id="odbc:ibm" value='1#:DRIVER={IBM DB2 ODBC DRIVER};hostname=#3#;PORT=50000;"."DATABASE=#2#;PROTOCOL=TCPIP;UID=#4#;PWD=#5#;' />
+		<DSN_pattern id="oci" value='1#:dbname=//#3#:1521/#2#' />
+	</DSN_patterns>
+</DSN>

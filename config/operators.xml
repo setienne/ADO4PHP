@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<operators>
+	<operator id="eq" value="="/>
+	<operator id="sup" value="="/>
+	<operator id="inf" value="="/>
+	<operator id="supeq" value=">="/>
+	<operator id="infeq" value="" />
+	<operator id="li" value="like"/>
+	<operator id="in" value="IN"/>
+	<operator id="notin" value="NOT IN"/>
+
+
+
+</operators>
